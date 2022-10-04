@@ -1,0 +1,97 @@
+************************************************************************* QUESTION  #1 *****************************************************************
+
+Swaping Two Numbers
+x = 2
+y = 4
+(x, y) = (y, x)
+print("x =", x, "y =", y)
+
+******************************************
+
+Calculator
+x = int(input("Enter any number: "))
+y = int(input("Enter any number: "))
+operations = input("Enter operation: ")
+if operations == "+":
+    print(x, "+", y, "=", x+y)
+elif operations == "-":
+    print(x, "-", y, "=", x-y)
+elif operations == "*":
+    print(x, "*", y, "=", x*y)
+elif operations == "/":
+    print(x, "/", y, "=", x/y)
+else:
+    print("ERROR")
+
+******************************************
+
+Fibonacci Series
+f= int(input("Enter number of iterations: "))
+x = 0
+y = 1
+print(x)
+print(y)
+for i in range(2,f):
+    c = x + y
+    x = y
+    y = c
+    print(c)
+
+******************************************
+
+Factorial
+m = int(input("Enter number: "))
+n = 1
+for i in range(1, m+1):
+    n = n*i
+print(n)
+
+******************************************
+
+String Operations check
+m = "I love biryani"
+print(len(m))
+print(m[0])
+print(m[-1])
+print(m[::])
+print(m[0:len(m):2])
+
+************************************************************************* QUESTION  #2 *****************************************************************
+
+Maze Problem
+
+print("Let's find our way out of this maze!")
+
+point_1 = str(input("Left or Right: "))
+if point_1 == "right" or "Right":
+    print("Continue to right")
+else:
+    print("Dead End!")
+    quit()
+
+point_2 = str(input("Left or Right: "))
+if point_2 == "left" or "Left":
+    print("Continue to left")
+else:
+    print("Dead End!")
+    quit()
+
+point_3 = str(input("Left or Right: "))
+if point_3 == "left" or "Left":
+    print("Continue to left")
+else:
+    print("Dead End!")
+    quit()
+
+point_4 = str(input("Left or Right: "))
+if point_4 == "right" or "Right":
+    print("Continue to right")
+else:
+    print("Dead End!")
+    quit()
+
+point_5 = str(input("Left or Right: "))
+if point_5 == "left" or "Left":
+    print("I see the way out!")
+else:
+    print("Dead End!")
